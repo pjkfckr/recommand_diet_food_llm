@@ -21,8 +21,6 @@ for message in history.messages:
 prompt = st.chat_input("섭취해야하는 영양성분과 식사분량을 입력해주세요")
 
 if prompt:
-    # Save user message to history
-    history.add_user_message(prompt)
 
     with st.chat_message("user"):
         st.markdown(prompt)
